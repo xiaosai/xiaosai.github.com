@@ -75,42 +75,6 @@ def contract(request) :
 	</code>
 </pre>
 
-<h3>7. 编写页面 </h3>
-<p>
-template/report/contract_list.html如下：
-</p>
-<pre>
-	<code>
-{% extends "base.html" %}
-{% block title %}合同列表{% endblock %}
-{% block content %}
-<p>contractId: {{ contract.id }}.</p>
-<p>name: {{ contract.contract_name }}.</p>
-<p>num: {{ contract.contract_num }}.</p>
-{% endblock %}
-	</code>
-</pre>
 
-<p>
-template/base.html 如下：
-</p>
-<pre>
-	<code>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="en">
-<head>
-    <title>{% block title %}{% endblock %}</title>
-</head>
-<body>
-    <h1>我的报表工具</h1>
-    {% block content %}{% endblock %}
-    {% block footer %}
-    <hr>
-    <p>Thanks for visiting my site.</p>
-    {% endblock %}
-</body>
-</html>
-	</code>
-</pre>
 
 {% include JB/setup %}

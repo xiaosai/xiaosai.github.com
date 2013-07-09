@@ -82,10 +82,6 @@ template/report/contract_list.html如下：
 <pre>
 	<code>
 		{%&nbsp;extends&nbsp;&quot;base.html&quot;&nbsp;%}
-		{%&nbsp;block&nbsp;title&nbsp;%}合同列表{%&nbsp;endblock&nbsp;%}
-		{%&nbsp;block&nbsp;content&nbsp;%}
-		&lt;p&gt;contractId:&nbsp;contract.id.&lt;/p&gt;
-		{%&nbsp;endblock&nbsp;%}
 	</code>
 </pre>
 {% include JB/setup %}

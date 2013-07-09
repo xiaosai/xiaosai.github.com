@@ -109,5 +109,8 @@ template/base.html 如下：
 		&lt;/html&gt;
 	</code>
 </pre>
-<h3>8. 浏览器输入http://localhost:8000/report/contract</h3>
+<h3>8. 浏览器输入<a href="http://localhost:8000/report/contract">http://localhost:8000/report/contract</a></h3>
+<img src="http://i1333.photobucket.com/albums/w631/zhangsaiyong/ct-list_zps7d76391b.png?t=1373357165"/>
+
+<p>{{ page.date | date_to_string }}</p>
 

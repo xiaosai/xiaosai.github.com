@@ -87,7 +87,7 @@ template/report/contract_list.html如下：
 		<p>contractId: { { contract.id }}.</p>
 		<p>name: { { contract.contract_name }}.</p>
 		<p>num: { { contract.contract_num }}.</p>
-		{% endblock %}
+		{ % endblock %}
 	</code>
 </pre>
 {% include JB/setup %}

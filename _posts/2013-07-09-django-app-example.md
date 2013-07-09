@@ -109,6 +109,6 @@ template/base.html 如下：
 		&lt;/html&gt;
 	</code>
 </pre>
-
-
-{ % include JB/setup %}
+</h3>8. 浏览器输入 http://localhost:8000/report/contract</h3>
+<img src="http://i1333.photobucket.com/albums/w631/zhangsaiyong/ct-list_zps7d76391b.png?t=1373357165"/>
+{% include JB/setup %}

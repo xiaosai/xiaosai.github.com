@@ -82,7 +82,7 @@ template/report/contract_list.html如下：
 <pre>
 	<code>
 		%&nbsp;extends&nbsp;&quot;base.html&quot;&nbsp;%
-		{sai}
+		{{sai}}
 	</code>
 </pre>
 {% include JB/setup %}

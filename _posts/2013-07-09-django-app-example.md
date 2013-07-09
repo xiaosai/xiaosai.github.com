@@ -1,8 +1,8 @@
 ---
 layout: default
-title: django 实例
-category: python
-tags: [python, django]
+title: "django 实例"
+category: "python"
+tags: ["python", "django"]
 ---
 <h2>{{ page.title }}</h2>
 <h3>1. 创建一个应用模块</h3>

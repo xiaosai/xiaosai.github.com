@@ -49,8 +49,8 @@ class Contract(models.Model):
     id = models.CharField(max_length=36, primary_key=True)
     contract_num = models.CharField(max_length=30)
     contract_name = models.CharField(max_length=255)
-     class Meta:  # 自定义表名
-            db_table = "contract"
+    class Meta:  # 自定义表名
+    	db_table = "contract"
 	</code>
 </pre>
 
@@ -81,8 +81,9 @@ template/report/contract_list.html如下：
 </p>
 <pre>
 	<code>
-		%&nbsp;extends&nbsp;&quot;base.html&quot;&nbsp;%
-		{{sai}}
+		{% extends "base.html" %}
+		{% block title %}合同列表{% endblock %}
+		{% block content %}
 	</code>
 </pre>
 {% include JB/setup %}

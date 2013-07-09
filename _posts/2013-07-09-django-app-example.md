@@ -109,5 +109,5 @@ template/base.html 如下：
 		&lt;/html&gt;
 	</code>
 </pre>
-</h3>8. 浏览器输入 http://localhost:8000/report/contract </h3>
+</h3>8. 浏览器输入  </h3>
 

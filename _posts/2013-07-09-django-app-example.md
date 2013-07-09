@@ -84,7 +84,7 @@ template/report/contract_list.html如下：
 		{ % extends "base.html" %}
 		{ % block title %}合同列表{% endblock %}
 		{ % block content %}
-		<p>contractId: { { contract.id }}.</p>
+		<p>contractId: .</p>
 		{ % endblock %}
 	</code>
 </pre>

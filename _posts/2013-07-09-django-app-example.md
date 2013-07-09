@@ -54,4 +54,63 @@ class Contract(models.Model):
 	</code>
 </pre>
 
+<h3>5. 设置页面模板地址</h3>
+<p>
+在 mysite/setting.py 文件下修改对象，如下：
+</p>
+<pre>
+	<code>
+TEMPLATE_DIRS = (
+    '/Users/saiyongzhang/WorkSpace/python/mysite/template',
+)
+	</code>
+</pre>
+
+<h3>6. 页面report/views.py</h3>
+<pre>
+	<code>
+def contract(request) :
+    ct = Contract.objects.get(id = '0e3305a9-e219-11e2-95cc-00222822153f')
+    return render_to_response('report/contract_list.html', {'contract': ct})
+	</code>
+</pre>
+
+<h3>7. 编写页面 </h3>
+<p>
+template/report/contract_list.html如下：
+</p>
+<pre>
+	<code>
+{% extends "base.html" %}
+{% block title %}合同列表{% endblock %}
+{% block content %}
+<p>contractId: {{ contract.id }}.</p>
+<p>name: {{ contract.contract_name }}.</p>
+<p>num: {{ contract.contract_num }}.</p>
+{% endblock %}
+	</code>
+</pre>
+
+<p>
+template/base.html 如下：
+</p>
+<pre>
+	<code>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <h1>我的报表工具</h1>
+    {% block content %}{% endblock %}
+    {% block footer %}
+    <hr>
+    <p>Thanks for visiting my site.</p>
+    {% endblock %}
+</body>
+</html>
+	</code>
+</pre>
+
 {% include JB/setup %}

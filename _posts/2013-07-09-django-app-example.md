@@ -75,6 +75,42 @@ def contract(request) :
 	</code>
 </pre>
 
+<h3>7. 编写页面 </h3>
+<p>
+template/report/contract_list.html如下：
+</p>
+<pre>
+	<code>
+		{%&nbsp;extends&nbsp;&quot;base.html&quot;&nbsp;%}
+		{%&nbsp;block&nbsp;title&nbsp;%}合同列表{%&nbsp;endblock&nbsp;%}
+		{%&nbsp;block&nbsp;content&nbsp;%}
+		&lt;p&gt;contractId:&nbsp;{{contract.id}}.&lt;/p&gt;
+		&lt;p&gt;name:&nbsp;{{contract.contract_name}}.&lt;/p&gt;
+		&lt;p&gt;num:&nbsp;{{contract.contract_num}}.&lt;/p&gt;
+		{%&nbsp;endblock&nbsp;%}
+	</code>
+</pre>
 
+<p>
+template/base.html 如下：
+</p>
+<pre>
+	<code>
+		&lt;!DOCTYPE&nbsp;HTML&nbsp;PUBLIC&nbsp;&quot;-//W3C//DTD&nbsp;HTML&nbsp;4.01//EN&quot;&gt;
+		&lt;html&nbsp;lang=&quot;en&quot;&gt;
+		&lt;head&gt;
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;{%&nbsp;block&nbsp;title&nbsp;%}{%&nbsp;endblock&nbsp;%}&lt;/title&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+		&lt;h1&gt;我的报表工具&lt;/h1&gt;
+		{%&nbsp;block&nbsp;content&nbsp;%}{%&nbsp;endblock&nbsp;%}
+		{%&nbsp;block&nbsp;footer&nbsp;%}
+		&lt;hr&gt;
+		&lt;p&gt;Thanks&nbsp;for&nbsp;visiting&nbsp;my&nbsp;site.&lt;/p&gt;
+		{%&nbsp;endblock&nbsp;%}
+		&lt;/body&gt;
+		&lt;/html&gt;	
+	</code>
+</pre>
 
 {% include JB/setup %}

@@ -81,9 +81,8 @@ template/report/contract_list.html如下：
 </p>
 <pre>
 	<code>
-		<p>
 		%&nbsp;extends&nbsp;&quot;base.html&quot;&nbsp;%
-		</p>
+		{sai}
 	</code>
 </pre>
 {% include JB/setup %}

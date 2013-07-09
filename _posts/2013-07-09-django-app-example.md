@@ -82,8 +82,6 @@ template/report/contract_list.html如下：
 <pre>
 	<code>
 		{% extends "base.html" %}
-		{% block title %}合同列表{% endblock %}
-		{% block content %}
 	</code>
 </pre>
 {% include JB/setup %}

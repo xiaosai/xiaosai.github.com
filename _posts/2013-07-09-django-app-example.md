@@ -81,7 +81,7 @@ template/report/contract_list.html如下：
 </p>
 <pre>
 	<code>
-		{%&nbsp;extends&nbsp;&quot;base.html&quot;&nbsp;%}
+		%&nbsp;extends&nbsp;&quot;base.html&quot;&nbsp;%
 	</code>
 </pre>
 {% include JB/setup %}
